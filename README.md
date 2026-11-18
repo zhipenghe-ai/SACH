@@ -4,6 +4,10 @@ Verified local release candidate for **Structure-aware contrastive hashing for u
 
 SACH learns separate image and text hash functions for bidirectional retrieval. The training implementation combines coarse and cluster-derived similarities for graph propagation, aligns graph features with a contrastive loss, and uses a joint code generator to supervise the modality hash functions.
 
+## Framework
+
+![SACH workflow from paired image and text through feature extraction, semantic graph construction, and structure-aware alignment to hash learning](docs/figures/sach-framework.png)
+
 ## Training
 
 From this directory, inspect the preset options with `python main_mir.py --help`. The original command names and experiment defaults are retained. Training requires compatible precomputed feature/label splits, CUDA, and the runtime packages listed in the baseline notes.
